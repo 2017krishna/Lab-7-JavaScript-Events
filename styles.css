@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    margin: 20px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+.container {
+    background: #dfdfdf;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #298df8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #004792;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.message {
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+}
