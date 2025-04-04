@@ -26,3 +26,25 @@ form.addEventListener('submit', (event) => {
     event.preventDefault(); // Prevents form submission
     formMessage.textContent = 'Form submitted successfully!';
 });
+
+// Focus and Blur Events
+const focusBlurInput = document.getElementById('focus-blur-input');
+const focusBlurMessage = document.getElementById('focus-blur-message');
+
+focusBlurInput.addEventListener('focus', () => {
+    focusBlurMessage.textContent = 'Input field is focused!';
+});
+
+focusBlurInput.addEventListener('blur', () => {
+    focusBlurMessage.textContent = 'Input field lost focus!';
+});
+
+// Event Delegation
+const buttonContainer = document.getElementById('button-container');
+const delegationMessage = document.getElementById('delegation-message');
+
+buttonContainer.addEventListener('click', (event) => {
+    if (event.target.tagName === 'BUTTON') {
+        delegationMessage.textContent = `You clicked: ${event.target.textContent}`;
+    }
+});
